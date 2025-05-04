@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PlanFit/static/css/main.4c2eea9e.css",
-    "main.js": "/PlanFit/static/js/main.96c3daf3.js",
+    "main.js": "/PlanFit/static/js/main.d9cacb8f.js",
     "static/media/womanIcon.png": "/PlanFit/static/media/womanIcon.42ab1d40b706245b8bf8.png",
     "static/media/manIcon.png": "/PlanFit/static/media/manIcon.411d81d8bcbe894ca4ab.png",
     "static/media/logo.png": "/PlanFit/static/media/logo.b57f9eb7e5867c5ac689.png",
     "index.html": "/PlanFit/index.html",
     "main.4c2eea9e.css.map": "/PlanFit/static/css/main.4c2eea9e.css.map",
-    "main.96c3daf3.js.map": "/PlanFit/static/js/main.96c3daf3.js.map"
+    "main.d9cacb8f.js.map": "/PlanFit/static/js/main.d9cacb8f.js.map"
   },
   "entrypoints": [
     "static/css/main.4c2eea9e.css",
-    "static/js/main.96c3daf3.js"
+    "static/js/main.d9cacb8f.js"
   ]
 }
