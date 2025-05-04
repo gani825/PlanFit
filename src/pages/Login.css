@@ -1,0 +1,46 @@
+.Login {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.Login h1 {
+    text-align: center;
+}
+
+.Login h3 {
+    font-weight: inherit;
+}
+
+.Login input {
+    box-sizing: border-box;
+    width: 550px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px; /* 피그마에는 2로돼있었으나 티가안나서 5px로설정 */
+
+}
+
+.Login input:focus {
+    border: 1px solid #3BC9DB;
+    outline: none;
+}
+
+
+.buttonBox {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Login button, button {
+    /*width: 290px;*/
+    /*height: 50px;*/
+    color: white;
+    background-color: #3BC9DB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

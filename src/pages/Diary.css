@@ -1,0 +1,16 @@
+
+.Diary { width: 770px; margin: 0 auto; }
+
+
+.unLoginState {
+    justify-content: center;
+    text-align: center;
+}
+
+
+.unLoginState .moveButtonWrap {
+    display: flex;
+    width: 770px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}

@@ -1,0 +1,57 @@
+.Join {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.Join h1 {
+    text-align: center;
+}
+
+.Join h3 {
+    font-weight: inherit;
+}
+
+.Join input {
+    box-sizing: border-box;
+    width: 550px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 5px; /* 피그마에는 2로 돼있었으나 티가 안나서 5px로 설정 */
+}
+
+.Join input:focus {
+    border: 1px solid #3BC9DB;
+    outline: none;
+}
+
+/* 성별 선택 부분 */
+.gender-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* 라디오 버튼과 텍스트 사이 간격 */
+    margin-bottom: 20px;
+}
+
+.gender-container input[type='radio'] {
+    width: 20px; /* 라디오 버튼 크기 */
+    height: 20px;
+    cursor: pointer;
+}
+
+.gender-container label {
+    font-size: 16px; /* 텍스트 크기 */
+    cursor: pointer;
+}
+
+.joinButton {
+    margin: 10px auto;
+
+}
+
+button:hover {
+    background-color: #3AC5D6; /* 버튼 호버 색상 */
+    transition-duration: 0.5s;
+}

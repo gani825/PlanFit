@@ -1,0 +1,66 @@
+.MyPage {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.MyPage .infoBox {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+
+}
+.MyPage .profileRectangle {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.MyPage .profileRectangle img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.MyPage .heightBox, .MyPage .weightBox {
+    width: 200px;
+    height: 100px;
+    border-right: 1px solid gray;
+}
+
+.MyPage .ageBox {
+    width: 200px;
+    height: 100px;
+}
+
+.bodyInfo {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.bodyInfo p {
+    margin: 0 auto;
+    padding: 10px;
+    width: 600px;
+    height: auto;
+}
+
+.bodyInfo p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.bodyInfo p:nth-of-type(4) {
+    margin-top: 30px;
+}
+
+.fontSet {
+    font-size: 1rem;
+    font-weight: inherit;
+    border-bottom: 1px solid gray; /* 이거바꾸면 밑줄색상바뀜 */
+}

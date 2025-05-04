@@ -1,0 +1,330 @@
+/* 전체 화면에 맞추기 위한 수정 */
+.calendar-container {
+    background-color: white; /* 흰 배경 */
+    text-align: center;
+    width: 770px; /* 화면 너비 */
+    margin: 0 auto;
+    padding: 0; /* 패딩 제거 */
+    box-sizing: border-box; /* 패딩 포함 */
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7개의 열로 구성 */
+    width: 770px; /* 캘린더 너비 꽉 채우기 */
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f7f7f7; /* 테두리 */
+    cursor: pointer;
+}
+
+.day, .weekday {
+    width: 110px;
+    height: 135px; /* 고정된 높이 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 상단 정렬 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    border: 1px solid #f7f7f7; /* 칸 구분 */
+    margin: 0; /* 여백 제거 */
+    padding: 5px; /* 날짜와 테두리 간격 추가 */
+    box-sizing: border-box;
+    font-size: 16px; /* 텍스트 크기 조정 */
+    color: #333;
+    position: relative; /* 상대 위치 설정 */
+}
+
+.day:hover {
+    background-color: #ebf9fb;
+}
+
+/* 오늘 날짜 스타일 */
+.today {
+    background-color: #3BC9DB;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: inline-flex; /* 요소를 인라인으로 유지 */
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 5px; /* 운동 태그와의 간격 조정 */
+    position: static; /* 위치를 기본값으로 설정 */
+}
+
+
+/* 요일 스타일 */
+.weekday {
+    height: 70px;
+    font-weight: unset;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center; /* 요일 텍스트 중앙 정렬 */
+    align-items: center; /* 중앙 정렬 */
+}
+
+.sunday {
+    color: #FF3333; /* Sun 텍스트 */
+}
+
+.saturday {
+    color: #1B96FB; /* Sat 텍스트 */
+}
+
+.sunday-date {
+    color: #FF3333 !important; /* 숫자 빨간색 */
+}
+
+.saturday-date {
+    color: #1B96FB !important; /* 숫자 파란색 */
+}
+
+.holiday {
+    color: #FF3333;
+}
+
+/* 운동 태그 스타일 */
+.exercise-tag-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* 운동 태그 사이의 간격 통일 */
+    margin-top: 5px; /* 날짜와 운동 태그 간의 간격 설정 */
+}
+
+/* 운동 태그 스타일 */
+.exercise-tag {
+    background-color: #BEEDF3;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 3px;
+    width: 85px;
+    height: 20px;
+    padding: 0 2px;
+    margin: 3px 2px; /* 태그 간 간격 */
+    max-width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+}
+
+.exercise-list-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.exercise-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #cdcdcd; /* 하단 테두리로 선 표시 */
+}
+
+.exercise-entry p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+}
+
+/* 월 네비게이션 스타일 */
+.month-navigation {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* 버튼과 텍스트를 가운데 정렬 */
+    align-items: center;
+    gap: 25px; /* 버튼과 텍스트 사이 간격 */
+}
+
+.month-navigation button {
+    background: none;
+    color: #3BC9DB;
+    border: none;
+    font-size: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 버튼 호버 효과 */
+.month-navigation button:hover {
+    color: #3AC5D6;
+    background: none;
+}
+
+#monthYear {
+    width: 50%;
+    font-size: 25px;
+    font-weight: inherit;
+    color: #333;
+    margin: 0 10px; /* 텍스트 양옆 간격 */
+    text-align: center;
+}
+
+
+
+/*!* 전체 화면에 맞추기 위한 수정 *!*/
+/*.calendar-container {*/
+/*    background-color: white; !* 흰 배경 *!*/
+/*    text-align: center;*/
+/*    width: 770px; !* 화면 너비 *!*/
+/*    margin: 0 auto;*/
+/*    padding: 0; !* 패딩 제거 *!*/
+/*    box-sizing: border-box; !* 패딩 포함 *!*/
+/*}*/
+
+/*.calendar {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(7, 1fr); !* 7개의 열로 구성 *!*/
+/*    width: 770px; !* 캘린더 너비 꽉 채우기 *!*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 1px solid #f7f7f7; !* 테두리 *!*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.day, .weekday {*/
+/*    width: 110px;*/
+/*    height: 135px; !* 고정된 높이 *!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start; !* 상단 정렬 *!*/
+/*    justify-content: flex-start; !* 왼쪽 정렬 *!*/
+/*    border: 1px solid #f7f7f7; !* 칸 구분 *!*/
+/*    margin: 0; !* 여백 제거 *!*/
+/*    padding: 5px; !* 날짜와 테두리 간격 추가 *!*/
+/*    box-sizing: border-box;*/
+/*    font-size: 16px; !* 텍스트 크기 조정 *!*/
+/*    color: #333;*/
+/*    position: relative; !* 상대 위치 설정 *!*/
+/*}*/
+
+/*.day:hover {*/
+/*    background-color: #ebf9fb;*/
+/*}*/
+
+/*!* 오늘 날짜 스타일 *!*/
+/*.today {*/
+/*    background-color: #3BC9DB;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    border-radius: 50%;*/
+/*    width: 28px;*/
+/*    height: 28px;*/
+/*    display: inline-flex; !* 요소를 인라인으로 유지 *!*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    font-size: 16px;*/
+/*    margin-bottom: 5px; !* 운동 태그와의 간격 조정 *!*/
+/*    position: static; !* 위치를 기본값으로 설정 *!*/
+/*}*/
+
+
+/*!* 요일 스타일 *!*/
+/*.weekday {*/
+/*    height: 70px;*/
+/*    font-weight: unset;*/
+/*    font-size: 24px;*/
+/*    text-align: center;*/
+/*    justify-content: center; !* 요일 텍스트 중앙 정렬 *!*/
+/*    align-items: center; !* 중앙 정렬 *!*/
+/*}*/
+
+/*.sunday {*/
+/*    color: #FF3333; !* Sun 텍스트 *!*/
+/*}*/
+
+/*.saturday {*/
+/*    color: #1B96FB; !* Sat 텍스트 *!*/
+/*}*/
+
+/*.sunday-date {*/
+/*    color: #FF3333 !important; !* 숫자 빨간색 *!*/
+/*}*/
+
+/*.saturday-date {*/
+/*    color: #1B96FB !important; !* 숫자 파란색 *!*/
+/*}*/
+
+/*.holiday {*/
+/*    color: #FF3333;*/
+/*}*/
+
+/*!* 운동 태그 스타일 *!*/
+/*.exercise-tag-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 5px; !* 운동 태그 사이의 간격 통일 *!*/
+/*    margin-top: 5px; !* 날짜와 운동 태그 간의 간격 설정 *!*/
+/*}*/
+
+/*!* 운동 태그 스타일 *!*/
+/*.exercise-tag {*/
+/*    background-color: #BEEDF3;*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*    font-size: 12px;*/
+/*    text-align: left;*/
+/*    border-radius: 3px;*/
+/*    width: 85px;*/
+/*    height: 20px;*/
+/*    padding: 0 2px;*/
+/*    margin: 3px 2px; !* 태그 간 간격 *!*/
+/*    max-width: 100%; !* 부모 컨테이너 너비에 맞춤 *!*/
+/*}*/
+
+/*.exercise-list-container {*/
+/*    width: 100%;*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/*.exercise-entry {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 20px 15px;*/
+/*    border-bottom: 1px solid #cdcdcd; !* 하단 테두리로 선 표시 *!*/
+/*}*/
+
+/*.exercise-entry p {*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*    color: #555;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*!* 월 네비게이션 스타일 *!*/
+/*.month-navigation {*/
+/*    margin-bottom: 30px;*/
+/*    display: flex;*/
+/*    justify-content: center; !* 버튼과 텍스트를 가운데 정렬 *!*/
+/*    align-items: center;*/
+/*    gap: 25px; !* 버튼과 텍스트 사이 간격 *!*/
+/*}*/
+
+/*.month-navigation button {*/
+/*    background: none;*/
+/*    color: #3BC9DB;*/
+/*    border: none;*/
+/*    font-size: 38px;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*!* 버튼 호버 효과 *!*/
+/*.month-navigation button:hover {*/
+/*    color: #3AC5D6;*/
+/*    background: none;*/
+/*}*/
+
+/*#monthYear {*/
+/*    width: 50%;*/
+/*    font-size: 25px;*/
+/*    !*font-weight: bold;*! !* 1212 팀장이 제거함 *!*/
+/*    color: #333;*/
+/*    margin: 5px 10px; !* 텍스트 양옆 간격 *!*/
+/*}*/

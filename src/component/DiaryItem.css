@@ -1,0 +1,28 @@
+.DiaryItem {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DiaryItem .info_section {
+    width: 100%;
+    cursor: pointer;
+}
+
+.DiaryItem .info_section .date_wrapper {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.DiaryItem .info_section .content_wrapper {
+    font-size: 18px;
+}
+.DiaryItem .button_section {
+    min-width: 70px;
+}
+.DiaryItem .bottom_section {
+    width: 200px; height: 50px; text-align: right;
+}

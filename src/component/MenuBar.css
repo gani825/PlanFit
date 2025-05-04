@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    width: 1200px;
+    justify-content: center;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*height: 100vh;  !* 화면 전체 높이 *!*/
+    /*display: flex;*/
+    /*justify-content: center;  !* 가로 중앙 정렬 *!*/
+    /*align-items: center;  !* 세로 중앙 정렬 *!*/
+    /*width: 100%;  !* 전체 너비 *!*/
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.MenuBar {
+    width: 100%; /* 항상 화면 전체 너비 */
+}
+
+body .MenuBar img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 220px;
+    height: 110px;
+    /* 로고 이미지 크기 설정 */
+}
+
+.MenuBar .navigation {
+    width: 770px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.MenuBar .navigation a {
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem; /* 폰트사이즈 */
+    text-decoration: none;
+    color: black; /* 색상 */
+    padding-bottom: 10px; /* 글자랑 보더 간격 설정 */
+    border-bottom: 3px solid transparent; /* 기본 상태에서 투명한 보더 */
+    transition: border-color 0.2s; /* 부드러운 전환 효과 */
+}
+
+.MenuBar .navigation a:hover {
+    border-bottom: 3px solid #3AC5D6; /* hover 효과 */
+}
+
+.MenuBar .navigation .active-link {
+    border-bottom: 3px solid #3AC5D6; /* 활성화된 링크 */
+}

@@ -1,0 +1,234 @@
+/* 팝업 전체 레이아웃 */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    width: 700px;
+    max-width: 700px;
+    height: 690px;
+    max-height: 690px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* 세로 스크롤을 팝업 전체에 적용 */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* 검색창 스타일 */
+.search-input {
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 60%;
+    padding: 7px;
+    margin: 0 auto;
+}
+
+/* 카테고리 탭 스타일 */
+.category-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+    border-bottom: 2px solid transparent;
+}
+
+.category-button.active {
+    color: #3BC9DB;
+    border-bottom: 2px solid #3BC9DB;
+    font-weight: bold;
+}
+
+/* 운동 리스트 스타일 */
+.exercise-list {
+    overflow-y: visible; /* 내부 스크롤 제거 */
+    margin-bottom: 15px;
+}
+
+.exercise-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+/* 체크박스와 운동명 정렬 */
+.exercise-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    font-weight: 500;
+    color: #333;
+}
+
+/* 운동 상세 정보 스타일 */
+.exercise-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 드롭다운 스타일 */
+.exercise-details select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* 소모 칼로리 텍스트 스타일 */
+.exercise-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 기본 체크박스 스타일 */
+.exercise-item input[type="checkbox"] {
+    appearance: none; /* 기본 체크박스 스타일 제거 */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3BC9DB; /* 체크박스 테두리 색상 */
+    border-radius: 2px; /* 체크박스를 네모 모양으로 유지 */
+    cursor: pointer;
+    background-color: white; /* 기본 배경색 */
+}
+
+/* 체크된 상태에서의 배경색 변경 */
+.exercise-item input[type="checkbox"]:checked {
+    background-color: #3BC9DB; /* 체크된 상태에서의 배경색 */
+    border-color: #3BC9DB; /* 체크된 상태에서 테두리 색상 */
+}
+
+/* 체크 표시를 기본 스타일로 유지 */
+.exercise-item input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFFFFF'%3E%3Cpath d='M20.285 6.708a1 1 0 0 1 0 1.414l-10 10a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L9.5 16.086l9.293-9.293a1 1 0 0 1 1.492.002z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 0; /* 페이지네이션 버튼을 팝업 하단에 고정 */
+    background-color: #fff;
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.page-button:hover {
+    color: #3AC5D6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.page-button.active {
+    color: #3BC9DB;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* 버튼 스타일 */
+.fixed-buttons {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.popup-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3BC9DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.popup-button:hover {
+    background-color: #3AC5D6;
+}
+
+.popup-button:disabled {
+    background-color: #e0e0e0;
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* 닫기 버튼 스타일 */
+.popup-button.close-button {
+    background-color: #a9a9a9;
+}
+
+.popup-button.close-button:hover {
+    background-color: #999999;
+}
+
+/* 미디어 쿼리: 모바일 최적화 */
+@media (max-width: 480px) {
+    .category-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .exercise-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .exercise-details {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .popup-button,
+    .close-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

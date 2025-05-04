@@ -1,0 +1,169 @@
+.footer {
+    margin-top: 17px;
+}
+
+/* 푸터 버튼 스타일 */
+.footer button {
+    width: 335px;
+    height: 54px;
+    color: white;
+    background-color: #3BC9DB;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #3BC9DB;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 22px;
+    font-weight: unset;
+
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* 버튼 텍스트 크기 */
+    color: #444; /* 버튼 기본 색상 */
+    cursor: pointer; /* 마우스 오버 시 포인터 커서 */
+}
+
+.edit-button,
+.delete-button {
+    margin: 0 10px; /* 좌우 여백 */
+}
+
+.edit-button:hover {
+    color: #3AC5D6; /* 호버 시 색상 변경 */
+    text-decoration: underline;
+}
+
+.delete-button:hover {
+    color: #FF3333;
+    text-decoration: underline;
+}
+
+.divider {
+    color: #999; /* 구분선 색상 */
+    font-weight: bolder;
+}
+
+/* 체크박스와 텍스트를 나란히 배치 */
+.exercise-entry input[type='checkbox'] {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* 기본 체크박스 스타일 */
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #00BCD4;
+    border: 2px solid #00BCD4;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 체크된 상태 스타일 */
+input[type="checkbox"]:checked::before {
+    content: '✓';
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* 비활성화된 체크박스 스타일 */
+input[type="checkbox"]:disabled {
+    background-color: white;   /* 비활성화 시 배경색을 흰색으로 설정 */
+    border: 2px solid #ccc;    /* 테두리 색상을 회색으로 설정 */
+    cursor: not-allowed;       /* 커서를 비활성화된 상태로 설정 */
+}
+
+/* 비활성화된 체크박스 체크 표시 스타일 */
+input[type="checkbox"]:disabled:checked::before {
+    color: #ccc;               /* 비활성화된 체크 표시 색상을 회색으로 설정 */
+}
+
+
+/* 운동 텍스트 스타일 */
+.exercise-entry p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* 완료된 운동 텍스트에 선 긋기 */
+.completed-text .exercise-name {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+/*.footer {*/
+/*    margin-top: 17px;*/
+/*}*/
+
+/*!* 푸터 버튼 스타일 *!*/
+/*.footer button {*/
+/*    width: 335px;*/
+/*    height: 54px;*/
+/*    color: white;*/
+/*    background-color: #3BC9DB;*/
+/*    border-radius: 5px;*/
+/*    border: none;*/
+/*    font-size: 20px;*/
+/*    margin: 0 auto;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.footer-text {*/
+/*    color: #333;*/
+/*    font-size: 22px;*/
+/*    font-weight: unset;*/
+
+/*}*/
+
+/*.action-buttons {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    font-size: 16px; !* 버튼 텍스트 크기 *!*/
+/*    color: #444; !* 버튼 기본 색상 *!*/
+/*    cursor: pointer; !* 마우스 오버 시 포인터 커서 *!*/
+/*}*/
+
+/*.edit-button,*/
+/*.delete-button {*/
+/*    margin: 0 10px; !* 좌우 여백 *!*/
+/*}*/
+
+/*.edit-button:hover {*/
+/*    color: #3BC9DB; !* 호버 시 색상 변경 *!*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.delete-button:hover {*/
+/*    color: #FF3333;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.divider {*/
+/*    color: #999; !* 구분선 색상 *!*/
+/*    font-weight: bolder;*/
+/*}*/
+

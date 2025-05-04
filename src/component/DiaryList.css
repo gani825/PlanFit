@@ -1,0 +1,27 @@
+
+
+.DiaryList .list_wrapper {
+    margin-top: 40px;
+}
+.DiaryList .menu_wrapper {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DiaryList .left_col select {
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.DiaryList .menu_wrapper .right_col button {
+    background-color: #3BC9DB;
+    width: 200px;
+    height: 50px;
+}

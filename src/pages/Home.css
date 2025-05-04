@@ -1,0 +1,713 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 메인 콘텐츠 영역 */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* 오른쪽 패널 스타일 */
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 370px;
+}
+
+/* 위젯 스타일 */
+.widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.widget {
+    background-color: #fff;
+    width: 368px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.widget .chartSet {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+/*.bottom-widget {*/
+/*    background-color: #fff;*/
+/*    width: 570px;*/
+/*    height: 338px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: flex-start;*/
+/*    padding: 10px;*/
+/*}*/
+
+.bottom-widget {
+    background-color: #fff;
+    width: 570px;
+    height: 338px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    /*margin: 0 50px;*/
+}
+
+.bottom-widget:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+/* 하단 위젯 섹션 스타일 */
+.bottom-widgets {
+    margin: 20px 0;
+    width: 1160px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 금지 리스트 스타일 */
+.saved-ban-list {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.saved-ban-list ol {
+    padding-left: 20px;
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.saved-ban-list ol li {
+    margin: 10px 0;
+}
+
+.saved-ban-list ol li button {
+    width: 50px;
+    height: 23px;
+    margin-left: 30px;
+}
+
+.saved-ban-list h4 {
+    font-size: 16px;
+    color: #333;
+}
+
+.saved-ban-list p {
+    font-size: 14px;
+    color: #666;
+    word-wrap: break-word;
+}
+
+/* 금지 리스트 입력 박스 */
+.inputBox {
+    box-sizing: border-box;
+    margin-top: auto;  /* inputBox를 항상 맨 아래로 위치시킴 */
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 5px 0;
+    justify-content: center;
+}
+
+.inputSet {
+    width: 70%;
+    border: none;
+    outline: none;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.inputSet:focus {
+    outline: none;
+    box-shadow: 0 1px 0 0 #3BC9DB; /* border bottom 비슷한효과 */
+}
+
+.prohibition {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #3BC9DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 나머지 스타일들 */
+.home-exercise-entry {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* 상하 간격 추가 */
+    gap: 8px; /* 체크박스와 텍스트 사이의 간격 */
+}
+
+/* 체크박스 스타일 */
+.home-exercise-entry input[type='checkbox'] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+/* 완료된 운동 텍스트 스타일 */
+.home-completed-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.home-exercise-entry span {
+    text-align: left;
+    display: inline-block;
+    width: 80%;            /* 최대 너비를 설정 */
+    white-space: nowrap;    /* 텍스트가 한 줄에 유지되도록 설정 */
+    overflow: hidden;       /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 부분을 "..."으로 표시 */
+}
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #3BC9DB;
+    width: 365px;
+    height: 160px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sign-in p {
+    width: auto;
+    cursor: pointer;
+}
+/* 버튼들 스타일 */
+.sign-in-button {
+    background-color: #3BC9DB;
+    color: white;
+    border: none;
+    padding: 10px 90px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+}
+
+.prohibition {
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* more-text 스타일 */
+.more-text {
+    color: #666;
+}
+
+.marginSet {
+    margin: 10px;
+}
+
+
+/*.home-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    !*padding: 20px;*!*/
+/*    !*gap: 20px;*!*/
+/*}*/
+
+/*!* 메인 콘텐츠 영역 *!*/
+/*.main-content {*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*!* 달력 섹션 스타일 *!*/
+/*.calendar-section {*/
+/*    flex: 2;*/
+/*    background-color: #fff;*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 8px;*/
+/*    width: 650px;          !* 최대 너비 설정 *!*/
+/*    height: 797px;        !* 최대 높이 설정 *!*/
+/*    overflow: hidden;         !* 넘치는 내용 숨기기 *!*/
+/*}*/
+
+/*!* 달력 안의 셀 크기 조정 *!*/
+/*.calendar-section .calendar {*/
+/*    width: 100%;              !* 너비를 부모에 맞춤 *!*/
+/*    max-width: 100%;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(7, 1fr); !* 7개의 열로 구성 *!*/
+/*}*/
+
+/*!* 달력의 날짜 및 요일 셀 크기 *!*/
+/*.calendar-section .day,*/
+/*.calendar-section .weekday {*/
+/*    height: 40px;             !* 각 셀의 높이를 작게 설정 *!*/
+/*    font-size: 12px;          !* 글자 크기 조정 *!*/
+/*}*/
+
+/*!* 오늘 날짜 스타일 *!*/
+/*.calendar-section .today {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    font-size: 12px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border-radius: 50%;*/
+/*    background-color: #3BC9DB;*/
+/*    color: white;*/
+/*}*/
+
+/*!* 네비게이션 버튼과 연도-월 표시 스타일 *!*/
+/*.calendar-section .month-navigation {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.calendar-section .month-navigation button {*/
+/*    font-size: 18px;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.calendar-section #monthYear {*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*!* 오른쪽 패널 스타일 *!*/
+/*.right-panel {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 20px;*/
+/*    width: 370px;*/
+/*}*/
+
+/*!* Sign In 섹션 스타일 *!*/
+/*.sign-in {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    border: 1px solid #3BC9DB;*/
+/*    width: 365px;*/
+/*    height: 160px;*/
+/*    text-align: center;*/
+/*    border-radius: 5px;*/
+/*    margin: 0 auto;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.signButtonBox {*/
+
+/*}*/
+
+/*.sign-in-button {*/
+/*    background-color: #3BC9DB;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px 90px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 5px;*/
+/*    width: 250px;*/
+/*    height: 40px;*/
+/*}*/
+
+
+/*!* 회원가입 버튼 설정 *!*/
+/*.sign-in p {*/
+/*    cursor: pointer;*/
+/*    width: auto;*/
+/*    margin: 0 auto;*/
+/*    line-height: 50px;*/
+/*}*/
+
+/*!* 위젯 스타일 *!*/
+/*.widgets {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.widget {*/
+/*    background-color: #fff;*/
+/*    width: 368px;*/
+/*    height: 300px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.bottom-widget {*/
+/*    background-color: #fff;*/
+/*    width: 570px;*/
+/*    height: 338px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    !*margin: 0 50px;*!*/
+
+/*}*/
+
+/*!*.bottom-widget {*!*/
+/*!*    background-color: #fff;*!*/
+/*!*    width: 370px;*!*/
+/*!*    height: 338px;*!*/
+/*!*    border: 1px solid #ddd;*!*/
+/*!*    border-radius: 5px;*!*/
+/*!*    text-align: center;*!*/
+/*!*    !*margin: 0 50px;*!*!*/
+
+/*!*}*!*/
+
+/*!* 하단 위젯 섹션 스타일 *!*/
+/*.bottom-widgets {*/
+/*    margin: 20px 0;*/
+/*    width: 1160px;*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+
+/*}*/
+
+/*.bottom-widgets .widget {*/
+/*    flex: 1;*/
+/*}*/
+
+/*.bottom-widget h3 {*/
+/*    text-align: left;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.widget {*/
+/*    text-align: left;*/
+
+/*}*/
+
+/*.widget p {*/
+/*    margin-left: 10px;*/
+/*    white-space: pre-line; !* 줄바꿈 문자(\n)를 인식하여 줄바꿈 적용 *!*/
+/*    line-height: 2.5; !* 줄 간격을 조정 *!*/
+/*    font-size: 1.0rem;*/
+/*}*/
+
+/*.widget h3 {*/
+/*    text-align: left;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.widget .chartSet {*/
+/*    width: 100%;*/
+/*    justify-content: center;*/
+/*    display: flex;*/
+/*}*/
+
+/*.prohibition {*/
+/*    width: 100px;*/
+/*    height: 30px;*/
+/*    margin-top: 15px;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+/*!*textarea {*!*/
+/*!*    width: 340px;*!*/
+/*!*    height: 200px;*!*/
+/*!*    border-color: #ccc;*!*/
+/*!*}*!*/
+
+/*textarea {*/
+/*    width: 540px;*/
+/*    height: 200px;*/
+/*    border-color: #ccc;*/
+/*}*/
+
+/*textarea:hover {*/
+/*    border-color: #3BC9DB;*/
+/*}*/
+
+/*.home-exercise-entry {*/
+/*    margin-left: 10px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    padding: 10px 0; !* 상하 간격 추가 *!*/
+/*    gap: 8px; !* 체크박스와 텍스트 사이의 간격 *!*/
+/*}*/
+
+/*!* 체크박스 스타일 *!*/
+/*.home-exercise-entry input[type='checkbox'] {*/
+/*    margin-right: 8px;*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*}*/
+
+/*!* 완료된 운동 텍스트 스타일 *!*/
+/*.home-completed-text {*/
+/*    text-decoration: line-through;*/
+/*    color: gray;*/
+/*}*/
+
+/*.home-exercise-entry span {*/
+/*    text-align: left;*/
+/*    display: inline-block;*/
+/*    width: 80%;            !* 최대 너비를 설정 *!*/
+/*    white-space: nowrap;    !* 텍스트가 한 줄에 유지되도록 설정 *!*/
+/*    overflow: hidden;       !* 넘치는 텍스트를 숨김 *!*/
+/*    text-overflow: ellipsis; !* 넘치는 부분을 "..."으로 표시 *!*/
+/*}*/
+
+/*.home-exercise-entry span {*/
+/*    text-align: left;*/
+/*    display: inline-block;*/
+/*    width: 80%;            !* 최대 너비를 설정 *!*/
+/*    white-space: nowrap;    !* 텍스트가 한 줄에 유지되도록 설정 *!*/
+/*    overflow: hidden;       !* 넘치는 텍스트를 숨김 *!*/
+/*    text-overflow: ellipsis; !* 넘치는 부분을 "..."으로 표시 *!*/
+/*}*/
+
+/*.more-text {*/
+/*    color: #666;*/
+/*}*/
+
+
+/*.marginSet {*/
+/*    margin: 10px;*/
+/*}*/
+/*.saved-ban-list {*/
+/*    margin-top: 10px;*/
+/*    padding: 10px;*/
+
+/*}*/
+
+/*.saved-ban-list ol {*/
+/*    padding-left: 20px;*/
+/*    width: auto;*/
+/*    margin: 0 auto;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.saved-ban-list ol li {*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.saved-ban-list ol li button {*/
+/*    width: 50px;*/
+/*    height: 23px;*/
+/*    margin-left: 30px;*/
+/*}*/
+
+/*.saved-ban-list h4 {*/
+/*    font-size: 16px;*/
+/*    color: #333;*/
+/*}*/
+
+/*.saved-ban-list p {*/
+/*    font-size: 14px;*/
+/*    color: #666;*/
+/*    word-wrap: break-word;*/
+/*}*/
+
+/*.inputBox {*/
+/*    height: 50px;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.inputSet {*/
+/*    width: 70%;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    outline: none;*/
+/*    height: 30px;*/
+/*}*/
+
+/*.inputSet:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*.home-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    !*padding: 20px;*!*/
+/*    !*gap: 20px;*!*/
+/*}*/
+
+/*!* 메인 콘텐츠 영역 *!*/
+/*.main-content {*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*!* 달력 섹션 스타일 *!*/
+/*.calendar-section {*/
+/*    flex: 2;*/
+/*    background-color: #fff;*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 8px;*/
+/*    width: 650px;          !* 최대 너비 설정 *!*/
+/*    height: 797px;        !* 최대 높이 설정 *!*/
+/*    overflow: hidden;         !* 넘치는 내용 숨기기 *!*/
+/*}*/
+
+/*!* 달력 안의 셀 크기 조정 *!*/
+/*.calendar-section .calendar {*/
+/*    width: 100%;              !* 너비를 부모에 맞춤 *!*/
+/*    max-width: 100%;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(7, 1fr); !* 7개의 열로 구성 *!*/
+/*}*/
+
+/*!* 달력의 날짜 및 요일 셀 크기 *!*/
+/*.calendar-section .day,*/
+/*.calendar-section .weekday {*/
+/*    height: 40px;             !* 각 셀의 높이를 작게 설정 *!*/
+/*    font-size: 12px;          !* 글자 크기 조정 *!*/
+/*}*/
+
+/*!* 오늘 날짜 스타일 *!*/
+/*.calendar-section .today {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    font-size: 12px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border-radius: 50%;*/
+/*    background-color: #3BC9DB;*/
+/*    color: white;*/
+/*}*/
+
+/*!* 네비게이션 버튼과 연도-월 표시 스타일 *!*/
+/*.calendar-section .month-navigation {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.calendar-section .month-navigation button {*/
+/*    font-size: 18px;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.calendar-section #monthYear {*/
+/*    font-size: 16px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*!* 오른쪽 패널 스타일 *!*/
+/*.right-panel {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 20px;*/
+/*    width: 370px;*/
+/*}*/
+
+/*!* Sign In 섹션 스타일 *!*/
+/*.sign-in {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    border: 1px solid #3BC9DB;*/
+/*    width: 365px;*/
+/*    height: 160px;*/
+/*    text-align: center;*/
+/*    border-radius: 5px;*/
+/*    margin: 0 auto;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.signButtonBox {*/
+
+/*}*/
+
+/*.sign-in-button {*/
+/*    background-color: #3BC9DB;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px 90px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*!* 회원가입 버튼 설정 *!*/
+/*.sign-in p {*/
+/*    cursor: pointer;*/
+/*    width: auto;*/
+/*    margin: 0 auto;*/
+/*    line-height: 50px;*/
+/*}*/
+
+/*!* 위젯 스타일 *!*/
+/*.widgets {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.widget {*/
+/*    background-color: #fff;*/
+/*    width: 368px;*/
+/*    height: 300px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.widget p { !* 1212 추가 *!*/
+/*    text-align: center;*/
+/*}*/
+
+/*.bottom-widget {*/
+/*    background-color: #fff;*/
+/*    width: 370px;*/
+/*    height: 338px;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    !*margin: 0 50px;*!*/
+
+/*}*/
+
+/*!* 하단 위젯 섹션 스타일 *!*/
+/*.bottom-widgets {*/
+/*    margin: 20px 0;*/
+/*    width: 1160px;*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+
+/*}*/
+
+/*.bottom-widgets .widget {*/
+/*    flex: 1;*/
+/*}*/
+
+
